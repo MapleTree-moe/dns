@@ -46,10 +46,9 @@ zones:
     targets:
       - cloudflare
 
-  # yamllint disable rule:comments-indentation
   # manage personal domain as well
-  # zyradyl.moe.:
-  #  sources:
-  #    - config
-  #  targets:
-  #    - cloudflare
+  zyradyl.moe.:
+    sources:
+      - config
+    targets:
+      - cloudflare
