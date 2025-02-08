@@ -1,0 +1,345 @@
+###
+### mapletree.moe - DNS management
+### zyradyl.moe domain configuration file
+###
+---
+# this is the root domain
+'':
+  # FIXME: this is a fucking disaster
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: A
+    values:
+      - 185.199.108.153
+      - 185.199.109.153
+      - 185.199.110.153
+      - 185.199.111.153
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: AAAA
+    values:
+      - 2606:50c0:8000::153
+      - 2606:50c0:8001::153
+      - 2606:50c0:8002::153
+      - 2606:50c0:8003::153
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    type: MX
+    values:
+      - exchange: mx02.mail.icloud.com.
+        preference: 10
+      - exchange: mx02.mail.icloud.com.
+        preference: 10
+  - type: TXT
+    values:
+      - keybase-site-verification=VR5rL24ioeVMErfrEx4l0HdM9i-9BuSx_BAISYBGCzo
+      - apple-domain=rgljw9YPLB8BXHnf
+      - v=spf1 redirect=icloud.com
+      - brave-ledger-verification=5c32cac27a9405357693a0f45a289aa7aaee7da63190e1507409bff91f6bafc6
+
+_dmarc:
+  - type: TXT
+    # yamllint disable-line rule:line-length
+    value: v=DMARC1\;  p=none\; rua=mailto:53a74f296f7c40509893f7de1f13b93d@dmarc-reports.cloudflare.net
+
+_github-challenge-zyradyl-moe-org:
+  - type: TXT
+    value: 527c9bd9b9
+
+_github-pages-challenge-zyradyl:
+  - type: TXT
+    value: f114cc3a8c846c8fd1569916b3a1d7
+
+_github-pages-challenge-zyradyl-moe:
+  - type: TXT
+    value: 158ec991dbeb37ce6bd2ea2c3a57fb
+
+_github-pages-challenge-zyradyl-moe.status:
+  - type: TXT
+    value: 3306ccf2cc1a305026e6ba2f038b09
+
+_gitlab-pages-verification-code:
+  - type: TXT
+    value: gitlab-pages-verification-code=696e35ee2ed51190f822df4b3f19c885
+
+_gitlab-pages-verification-code.archive:
+  - type: TXT
+    value: gitlab-pages-verification-code=936bfa7ddb28d23415f3c3cb03230060
+
+_gitlab-pages-verification-code.ayanami:
+  - type: TXT
+    # yamllint disable-line rule:line-length
+    value: _gitlab-pages-verification-code.ayanami.zyradyl.moe TXT gitlab-pages-verification-code=0d9b7c5278e2a424a15456b375434ccc
+
+_gitlab-pages-verification-code.blog:
+  - type: TXT
+    value: gitlab-pages-verification-code=5c3d7ab588c124ada46c23db3e946dd2
+
+_gitlab-pages-verification-code.elemental:
+  - type: TXT
+    value: gitlab-pages-verification-code=f148f7d88b9eaf401de752757157f636
+
+_gitlab-pages-verification-code.heavyreins:
+  - type: TXT
+    value: gitlab-pages-verification-code=1a7eef18d7c5bf5980847e4327408b49
+
+_gitlab-pages-verification-code.neobabel:
+  - type: TXT
+    value: gitlab-pages-verification-code=1a96329c49ead67f73a7b19ee3cbab89
+
+_gitlab-pages-verification-code.persona:
+  - type: TXT
+    value: gitlab-pages-verification-code=1dedcf9899209316cc2a1a5a7b6ffdc4
+
+_gitlab-pages-verification-code.projects:
+  - type: TXT
+    value: gitlab-pages-verification-code=43d52380ca5941b9bf78d4cded37ab6d
+
+_gitlab-pages-verification-code.seirath:
+  - type: TXT
+    value: gitlab-pages-verification-code=1e503e6eb7838cfaa1671df03dd9a13a
+
+_gitlab-pages-verification-code.starstuck:
+  - type: TXT
+    value: gitlab-pages-verification-code=f77d8385652a60156d25f3956b1cc953
+
+_gitlab-pages-verification-code.watchinggods:
+  - type: TXT
+    value: gitlab-pages-verification-code=3726b715830343de9a5eda15cde1f2db
+
+about:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+archive:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+auth:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+ayanami:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+blog:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: s3.ap-northeast-1.wasabisys.com.
+
+browse:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+elemental:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+files:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+grab:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+heavyreins:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+kuroneko:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: s3.us-east-2.wasabisys.com.
+
+maple:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+miyuki:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: s3.us-east-2.wasabisys.com.
+
+neobabel:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+oracle:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+persona:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+projects:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: s3.ap-northeast-1.wasabisys.com.
+
+read:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+request:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+seirath:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+sig1._domainkey:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: false
+    type: CNAME
+    value: sig1.dkim.zyradyl.moe.at.icloudmailadmin.com.
+
+starstuck:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+status:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+watch:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+watchinggods:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl-moe.github.io.
+
+www:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+z:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+zr:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
+
+zt:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: zyradyl.moe.
