@@ -26,12 +26,9 @@
       - 2606:50c0:8001::153
       - 2606:50c0:8002::153
       - 2606:50c0:8003::153
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-    type: MX
+  - type: MX
     values:
-      - exchange: mx02.mail.icloud.com.
+      - exchange: mx01.mail.icloud.com.
         preference: 10
       - exchange: mx02.mail.icloud.com.
         preference: 10
@@ -40,7 +37,6 @@
       - keybase-site-verification=VR5rL24ioeVMErfrEx4l0HdM9i-9BuSx_BAISYBGCzo
       - apple-domain=rgljw9YPLB8BXHnf
       - v=spf1 redirect=icloud.com
-      - brave-ledger-verification=5c32cac27a9405357693a0f45a289aa7aaee7da63190e1507409bff91f6bafc6
 
 _dmarc:
   - type: TXT
