@@ -5,16 +5,17 @@
 ---
 version: 2
 
-commit-message:
-  prefix: "chore(dependencies): "
-
 updates:
   - package-ecosystem: "github-actions"
+    commit-message:
+      prefix: "chore(dependencies): "
     directory: "/"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "pip"
+    commit-message:
+      prefix: "chore(dependencies): "
     directory: "/"
     schedule:
       interval: "weekly"
