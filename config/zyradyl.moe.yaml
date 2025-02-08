@@ -80,37 +80,17 @@ _gitlab-pages-verification-code.blog:
   - type: TXT
     value: gitlab-pages-verification-code=5c3d7ab588c124ada46c23db3e946dd2
 
-_gitlab-pages-verification-code.elemental:
-  - type: TXT
-    value: gitlab-pages-verification-code=f148f7d88b9eaf401de752757157f636
-
-_gitlab-pages-verification-code.heavyreins:
-  - type: TXT
-    value: gitlab-pages-verification-code=1a7eef18d7c5bf5980847e4327408b49
-
 _gitlab-pages-verification-code.neobabel:
   - type: TXT
     value: gitlab-pages-verification-code=1a96329c49ead67f73a7b19ee3cbab89
-
-_gitlab-pages-verification-code.persona:
-  - type: TXT
-    value: gitlab-pages-verification-code=1dedcf9899209316cc2a1a5a7b6ffdc4
 
 _gitlab-pages-verification-code.projects:
   - type: TXT
     value: gitlab-pages-verification-code=43d52380ca5941b9bf78d4cded37ab6d
 
-_gitlab-pages-verification-code.seirath:
-  - type: TXT
-    value: gitlab-pages-verification-code=1e503e6eb7838cfaa1671df03dd9a13a
-
 _gitlab-pages-verification-code.starstuck:
   - type: TXT
     value: gitlab-pages-verification-code=f77d8385652a60156d25f3956b1cc953
-
-_gitlab-pages-verification-code.watchinggods:
-  - type: TXT
-    value: gitlab-pages-verification-code=3726b715830343de9a5eda15cde1f2db
 
 about:
   - octodns:
@@ -144,22 +124,6 @@ blog:
     type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
 
-elemental:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl-moe.github.io.
-
-heavyreins:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl-moe.github.io.
-
 kuroneko:
   - octodns:
       cloudflare:
@@ -184,14 +148,6 @@ neobabel:
     type: CNAME
     value: zyradyl-moe.github.io.
 
-persona:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl-moe.github.io.
-
 projects:
   - octodns:
       cloudflare:
@@ -199,14 +155,6 @@ projects:
         proxied: true
     type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
-
-seirath:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl-moe.github.io.
 
 sig1._domainkey:
   - octodns:
@@ -217,14 +165,6 @@ sig1._domainkey:
     value: sig1.dkim.zyradyl.moe.at.icloudmailadmin.com.
 
 starstuck:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl-moe.github.io.
-
-watchinggods:
   - octodns:
       cloudflare:
         auto-ttl: true
