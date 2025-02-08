@@ -1,0 +1,48 @@
+###
+### mapletree.moe - DNS management
+### octodns primary configuration file
+###
+---
+providers:
+  # primary source for record data is yaml files in config directory
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    default_ttl: 300
+    directory: ./config
+
+  # still using cloudflare for the time being
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    token: env/CLOUDFLARE_TOKEN
+
+  # easy way to deploy best practice for domains without mail
+  # apply to all by default
+  spf-base:
+    class: octodns_spf.SpfSource
+    ttl: 300
+
+  # for cloudflare mail routing
+  spf-cloudflare-mx-routing:
+    class: octodns_spf.SpfSource
+    includes:
+      - _spf.mx.cloudflare.net
+    merging_enabled: true
+    soft_fail: true
+    verify_dns_lookups: true
+
+zones:
+  # mapletree primary domain
+  mapletree.moe.:
+    sources:
+      - config
+      - spf-base
+      - spf-cloudflare-mx-routing
+    targets:
+      - cloudflare
+
+  # manage personal domain as well
+  # zyradyl.moe.:
+  #  sources:
+  #    - config
+  #  targets:
+  #    - cloudflare
