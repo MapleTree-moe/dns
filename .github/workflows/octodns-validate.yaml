@@ -7,11 +7,11 @@ name: Validate DNS Pull Request
 
 # yamllint disable-line rule:truthy
 on:
-  pull_request_target:
+  pull_request:
 
 jobs:
   octodns-sync:
-    name: Run `octodns-sync` with public.yaml
+    name: Generate octodns-sync plan for PR
     runs-on: ubuntu-latest
     outputs:
       plan: ${{ steps.generate-plan.outputs.plan }}
