@@ -38,6 +38,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v1.4.5
         with:
           issue-number: ${{ github.event.pull_request.number }}
+          token: ${{ secrets.nagato_github_token }}
           body: |
             Hello, I have processed your pull request and compared it against
             the existing infrastructure. Below indicates the changes that will
