@@ -8,9 +8,6 @@ name: Validate DNS Pull Request
 # yamllint disable-line rule:truthy
 on:
   pull_request_target:
-  push:
-    branches:
-      - main
 
 jobs:
   octodns-sync:
