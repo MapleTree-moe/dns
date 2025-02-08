@@ -128,14 +128,6 @@ archive:
     type: CNAME
     value: zyradyl-moe.github.io.
 
-auth:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
 ayanami:
   - octodns:
       cloudflare:
@@ -152,14 +144,6 @@ blog:
     type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
 
-browse:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
 elemental:
   - octodns:
       cloudflare:
@@ -167,22 +151,6 @@ elemental:
         proxied: true
     type: CNAME
     value: zyradyl-moe.github.io.
-
-files:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
-grab:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
 
 heavyreins:
   - octodns:
@@ -200,14 +168,6 @@ kuroneko:
     type: CNAME
     value: s3.us-east-2.wasabisys.com.
 
-maple:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
 miyuki:
   - octodns:
       cloudflare:
@@ -224,14 +184,6 @@ neobabel:
     type: CNAME
     value: zyradyl-moe.github.io.
 
-oracle:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
 persona:
   - octodns:
       cloudflare:
@@ -247,22 +199,6 @@ projects:
         proxied: true
     type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
-
-read:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
-request:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
 
 seirath:
   - octodns:
@@ -288,22 +224,6 @@ starstuck:
     type: CNAME
     value: zyradyl-moe.github.io.
 
-status:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl-moe.github.io.
-
-watch:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
 watchinggods:
   - octodns:
       cloudflare:
@@ -313,30 +233,6 @@ watchinggods:
     value: zyradyl-moe.github.io.
 
 www:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
-z:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
-zr:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: zyradyl.moe.
-
-zt:
   - octodns:
       cloudflare:
         auto-ttl: true
