@@ -1,3 +1,8 @@
+###
+### mapletree.moe - Standards & Formatting
+### enforce pre-commit hooks to check for errors and force standardized commits
+###
+---
 default_install_hook_types:
   - pre-commit
   - commit-msg
@@ -21,3 +26,10 @@ repos:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: []
+
+  # lint yaml
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.29.0
+    hooks:
+      - id: yamllint
+        args: [--strict]

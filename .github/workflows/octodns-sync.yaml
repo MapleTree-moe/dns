@@ -1,0 +1,31 @@
+###
+### mapletree.moe - Automation
+### Deploy updated DNS configuration to infrastructure.
+###
+---
+name: Deploy DNS Code
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'config/*.yaml'
+
+jobs:
+  octodns-deploy:
+    name: Deploy configuration to DNS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - run: pip install -r requirements.txt
+      - uses: solvaholic/octodns-sync@main
+        with:
+          config_path: config/octodns.yaml
+          doit: '--doit'
+        env:
+          CLOUDFLARE_TOKEN: ${{ secrets.cloudflare_token }}

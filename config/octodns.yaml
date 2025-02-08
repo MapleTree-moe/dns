@@ -3,6 +3,12 @@
 ### octodns primary configuration file
 ###
 ---
+manager:
+  # this is needed for github actions integration
+  plan_outputs:
+    markdown:
+      class: octodns.provider.plan.PlanMarkdown
+
 providers:
   # primary source for record data is yaml files in config directory
   config:
@@ -40,6 +46,7 @@ zones:
     targets:
       - cloudflare
 
+  # yamllint disable rule:comments-indentation
   # manage personal domain as well
   # zyradyl.moe.:
   #  sources:
