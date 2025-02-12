@@ -12,6 +12,7 @@ on:
       - main
     paths:
       - 'config/*.yaml'
+      - 'zones/*.yaml'
 
 jobs:
   octodns-deploy:
