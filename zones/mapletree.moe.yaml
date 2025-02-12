@@ -11,12 +11,6 @@
       cloudflare:
         proxied: true
         autottl: true
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: AAAA
-    value: 2001:19f0:0:4474:71fc:dba5:1606:c79c
   # DO NOT MODIFY - cloudflare mx - these entries are for cloudflare's mx
   # routing feature and are managed automatically. update the values to what is
   # in the cloudflare web console if applying a plan ever fails
