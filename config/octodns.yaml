@@ -14,7 +14,7 @@ providers:
   config:
     class: octodns.provider.yaml.YamlProvider
     default_ttl: 300
-    directory: ./config
+    directory: ./zones
 
   # still using cloudflare for the time being
   cloudflare:
