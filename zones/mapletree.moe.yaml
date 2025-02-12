@@ -7,9 +7,6 @@
   - ttl: 300
     type: A
     value: 1.1.1.1
-    octodns:
-      cloudflare:
-        proxied: true
   # DO NOT MODIFY - cloudflare mx - these entries are for cloudflare's mx
   # routing feature and are managed automatically. update the values to what is
   # in the cloudflare web console if applying a plan ever fails
