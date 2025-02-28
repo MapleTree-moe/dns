@@ -21,6 +21,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.NAGATO_GITHUB_TOKEN }}
+          base: main
           branch: automation
           title: "[AUTOMATED] Update main with Terraform Inputs"
           body: |
