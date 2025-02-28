@@ -1,0 +1,34 @@
+###
+### mapletree.moe - Automation
+### Push changes from terraform to main for deployment
+###
+---
+name: Push automation to main with PR
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - automation
+
+jobs:
+  merge-automation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.NAGATO_GITHUB_TOKEN }}
+          branch: automation
+          title: "[AUTOMATED] Update main with Terraform Inputs"
+          body: |
+            This is a pull request to update DNS records with information
+            received from the terraform octodns provider.
+
+            This pull request will be automatically merged.
+      - uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.NAGATO_GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
