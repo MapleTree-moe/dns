@@ -26,7 +26,7 @@ jobs:
         with:
           config_path: config/octodns.yaml
         env:
-          CLOUDFLARE_TOKEN: ${{ secrets.cloudflare_token }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
 
   add-pr-comment:
     name: Add `octodns-sync` plan to comment
@@ -38,7 +38,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v4.0.0
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          token: ${{ secrets.nagato_github_token }}
+          token: ${{ secrets.NAGATO_GITHUB_TOKEN }}
           body: |
             Hello, I have processed your pull request and compared it against
             the existing infrastructure. Below indicates the changes that will
