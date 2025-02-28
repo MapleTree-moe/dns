@@ -32,5 +32,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.NAGATO_GITHUB_TOKEN }}
+          github_token: ${{ secrets.NAGATO_WRITE_GITHUB_TOKEN }}
           branch: automation
