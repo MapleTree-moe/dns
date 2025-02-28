@@ -2,6 +2,7 @@
 ### mapletree.moe - DNS management
 ### mapletree.moe domain configuration file
 ###
+---
 # this is the root domain
 '':
   - ttl: 300
@@ -51,7 +52,7 @@ bypass:
   - octodns:
       cloudflare:
         auto-ttl: true
-        proxied: true
+        proxied: false
     type: CNAME
     value: kanade.mapletree.moe.
 cf2024-1._domainkey:
