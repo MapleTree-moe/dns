@@ -8,7 +8,6 @@ domains under the MapleTree Organization.
   - [Commit Messages](#commit-messages)
   - [Workflows](#workflows)
   - [Comments](#comments)
-  - [Licensing](#licensing)
 
 ## Getting Started
 To make changes to the domain records, follow the steps below:
@@ -62,11 +61,6 @@ for each new service added.
 As the configuration is written in YAML, comments should be primarily reserved
 for things that are not self evident. Additionally, please make use of `FIXME`
 and `TODO` to indicate where effort should be focused in the codebase.
-
-## Licensing
-While there's not really anything here that qualifies as software, the repo is
-licensed under [UNLICENSE][7] to help support the project and move it higher up
-the list of used licenses here on Github.
 
 [1]: https://github.com/nagato-senpai
 [2]: https://github.com/octodns/octodns
