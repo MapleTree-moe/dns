@@ -3,34 +3,35 @@
 ### Keep automation branch updated with main
 ###
 ---
-name: Sync automation branch with main
-
-# yamllint disable-line rule:truthy
-on:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: write
-
-jobs:
-  sync-branches:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-          fetch-depth: 0
-      - name: Update Test Branch
-        run: |
-          git checkout main
-          git fetch origin
-          git checkout automation
-          git pull
-          git merge origin/main
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.NAGATO_WRITE_GITHUB_TOKEN }}
-          branch: automation
+# TODO: Make this work
+# name: Sync automation branch with main
+#
+# # yamllint disable-line rule:truthy
+# on:
+#   push:
+#     branches:
+#       - main
+#
+# permissions:
+#   contents: write
+#
+# jobs:
+#   sync-branches:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           persist-credentials: false
+#           fetch-depth: 0
+#       - name: Update Test Branch
+#         run: |
+#           git checkout main
+#           git fetch origin
+#           git checkout automation
+#           git pull
+#           git merge origin/main
+#       - name: Push changes
+#         uses: ad-m/github-push-action@master
+#         with:
+#           github_token: ${{ secrets.NAGATO_WRITE_GITHUB_TOKEN }}
+#           branch: automation
