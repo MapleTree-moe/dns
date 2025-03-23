@@ -128,24 +128,24 @@ status:
 tdarr:
   type: CNAME
   value: maple.mapletree.moe.
-# torrent:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+torrent:
+  type: CNAME
+  value: maple.mapletree.moe.
 traefik.kanade:
   type: CNAME
   value: mapletree.moe.
 traefik.maple:
   type: CNAME
   value: maple.mapletree.moe.
-# tube:
-#   type: CNAME
-#   value: mapletree.moe.
-# watch:
-#   type: CNAME
-#   value: maple.mapletree.moe.
-# xen.maple:
-#   type: CNAME
-#   value: maple.mapletree.moe.
-# xo.maple:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+tube:
+  type: CNAME
+  value: mapletree.moe.
+watch:
+  type: CNAME
+  value: maple.mapletree.moe.
+xen.maple:
+  type: CNAME
+  value: maple.mapletree.moe.
+xo.maple:
+  type: CNAME
+  value: maple.mapletree.moe.
