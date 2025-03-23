@@ -36,9 +36,9 @@ auth:
 badapple:
   type: CNAME
   value: mapletree.moe.
-bazarr.maple:
-  type: CNAME
-  value: maple.mapletree.moe.
+# bazarr.maple:
+#   type: CNAME
+#   value: maple.mapletree.moe.
 cf2024-1._domainkey:
   # DO NOT MODIFY - cloudflare mx - refer to MX records for more information
   - octodns:
@@ -98,12 +98,8 @@ radarr.maple:
 #   type: CNAME
 #   value: maple.mapletree.moe.
 request:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+  type: CNAME
+  value: maple.mapletree.moe.
 s872486._domainkey:
   # smtp2go requirement
   type: CNAME
@@ -132,12 +128,12 @@ traefik.kanade:
 traefik.maple:
   type: CNAME
   value: maple.mapletree.moe.
-watch:
-  type: CNAME
-  value: maple.mapletree.moe.
-xen.maple:
-  type: CNAME
-  value: maple.mapletree.moe.
-xo.maple:
-  type: CNAME
-  value: maple.mapletree.moe.
+# watch:
+#   type: CNAME
+#   value: maple.mapletree.moe.
+# xen.maple:
+#   type: CNAME
+#   value: maple.mapletree.moe.
+# xo.maple:
+#   type: CNAME
+#   value: maple.mapletree.moe.
