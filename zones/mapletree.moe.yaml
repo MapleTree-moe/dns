@@ -32,33 +32,17 @@ _dmarc:
     # yamllint disable-line rule:line-length
     value: v=DMARC1\;  p=none\; rua=mailto:60c2ffa1264b43e68836c99fca7e14a3@dmarc-reports.cloudflare.net
 auth:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
-    value: maple.mapletree.moe.
+  type: CNAME
+  value: maple.mapletree.moe.
 badapple:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
-    value: kanade.mapletree.moe.
+  type: CNAME
+  value: kanade.mapletree.moe.
 bazarr:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+  type: CNAME
+  value: maple.mapletree.moe.
 bypass:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
-    value: kanade.mapletree.moe.
+  type: CNAME
+  value: kanade.mapletree.moe.
 cf2024-1._domainkey:
   # DO NOT MODIFY - cloudflare mx - refer to MX records for more information
   - octodns:
