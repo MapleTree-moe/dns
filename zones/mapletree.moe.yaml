@@ -36,7 +36,7 @@ auth:
 badapple:
   type: CNAME
   value: mapletree.moe.
-bazarr.maple:
+bazarr:
   type: CNAME
   value: maple.mapletree.moe.
 bypass:
@@ -94,13 +94,13 @@ meddit:
 net:
   type: CNAME
   value: kanade.mapletree.moe.
-nzb.maple:
+nzb:
   type: CNAME
   value: maple.mapletree.moe.
-prowlarr.maple:
+prowlarr:
   type: CNAME
   value: maple.mapletree.moe.
-radarr.maple:
+radarr:
   type: CNAME
   value: maple.mapletree.moe.
 read:
@@ -119,7 +119,7 @@ s872486._domainkey:
 search:
   type: CNAME
   value: mapletree.moe.
-sonarr.maple:
+sonarr:
   type: CNAME
   value: maple.mapletree.moe.
 status:
