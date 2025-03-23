@@ -64,13 +64,13 @@ kanade:
 # kubeapps.maple:
 #   type: CNAME
 #   value: maple.mapletree.moe.
-lldap.maple:
-  type: CNAME
-  value: maple.mapletree.moe.
 link:
   # smtp2go requirement
   type: CNAME
   value: track.smtp2go.net.
+lldap.maple:
+  type: CNAME
+  value: maple.mapletree.moe.
 # manga:
 #   type: CNAME
 #   value: maple.mapletree.moe.
