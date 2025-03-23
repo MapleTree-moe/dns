@@ -127,8 +127,12 @@ read:
     type: CNAME
     value: maple.mapletree.moe.
 request:
-  type: CNAME
-  value: maple.mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: maple.mapletree.moe.
 s872486._domainkey:
   # smtp2go requirement
   type: CNAME
@@ -137,8 +141,12 @@ s872486._domainkey:
 #   type: CNAME
 #   value: maple.mapletree.moe.
 search:
-  type: CNAME
-  value: mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: mapletree.moe.
 sonarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
@@ -158,8 +166,12 @@ traefik.maple:
   type: CNAME
   value: maple.mapletree.moe.
 tube:
-  type: CNAME
-  value: mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: mapletree.moe.
 watch:
   type: CNAME
   value: maple.mapletree.moe.
