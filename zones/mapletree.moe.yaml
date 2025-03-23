@@ -122,12 +122,12 @@ search:
 sonarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-# status:
-#   type: CNAME
-#   value: mapletree.moe.
-# tdarr:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+status:
+  type: CNAME
+  value: mapletree.moe.
+tdarr:
+  type: CNAME
+  value: maple.mapletree.moe.
 # torrent:
 #   type: CNAME
 #   value: maple.mapletree.moe.
