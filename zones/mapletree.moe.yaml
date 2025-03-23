@@ -137,9 +137,13 @@ s872486._domainkey:
   # smtp2go requirement
   type: CNAME
   value: dkim.smtp2go.net.
-# scale.maple:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+scale.maple:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: maple.mapletree.moe.
 search:
   - octodns:
       cloudflare:
@@ -175,9 +179,17 @@ tube:
 watch:
   type: CNAME
   value: maple.mapletree.moe.
-# xen.maple:
-#   type: CNAME
-#   value: maple.mapletree.moe.
-# xo.maple:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+xen.maple:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: maple.mapletree.moe.
+xo.maple:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: maple.mapletree.moe.
