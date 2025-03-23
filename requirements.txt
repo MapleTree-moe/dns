@@ -1,5 +1,5 @@
 octodns==1.11.0
 octodns-cloudflare==0.0.9
 octodns-spf==0.0.2
-pre-commit==4.1.0
+pre-commit==4.2.0
 yamllint==1.35.1
