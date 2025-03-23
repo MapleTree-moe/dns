@@ -31,17 +31,21 @@ _dmarc:
     # yamllint disable-line rule:line-length
     value: v=DMARC1\;  p=none\; rua=mailto:60c2ffa1264b43e68836c99fca7e14a3@dmarc-reports.cloudflare.net
 auth:
-  type: CNAME
-  value: maple.mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: maple.mapletree.moe.
 badapple:
   type: CNAME
   value: mapletree.moe.
-bazarr:
+bazarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-bypass:
-  type: CNAME
-  value: kanade.mapletree.moe.
+# bypass:
+#   type: CNAME
+#   value: kanade.mapletree.moe.
 cf2024-1._domainkey:
   # DO NOT MODIFY - cloudflare mx - refer to MX records for more information
   - octodns:
@@ -72,8 +76,12 @@ lldap.maple:
   type: CNAME
   value: maple.mapletree.moe.
 manga:
-  type: CNAME
-  value: maple.mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: maple.mapletree.moe.
 maple:
   # this is maple's primary record
   # FIXME: this should be a dynamic record
@@ -89,18 +97,22 @@ maple:
 #  value: 2001:19f0:0:4474:71fc:dba5:1606:c79c
 # yamllint enable rule:comments-indentation
 meddit:
-  type: CNAME
-  value: kanade.mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: kanade.mapletree.moe.
 net:
   type: CNAME
   value: kanade.mapletree.moe.
-nzb:
+nzb.maple:
   type: CNAME
   value: maple.mapletree.moe.
-prowlarr:
+prowlarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-radarr:
+radarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
 read:
@@ -119,16 +131,16 @@ s872486._domainkey:
 search:
   type: CNAME
   value: mapletree.moe.
-sonarr:
+sonarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
 status:
   type: CNAME
   value: mapletree.moe.
-tdarr:
+tdarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-torrent:
+torrent.maple:
   type: CNAME
   value: maple.mapletree.moe.
 traefik.kanade:
@@ -143,9 +155,9 @@ tube:
 watch:
   type: CNAME
   value: maple.mapletree.moe.
-xen.maple:
-  type: CNAME
-  value: maple.mapletree.moe.
-xo.maple:
-  type: CNAME
-  value: maple.mapletree.moe.
+# xen.maple:
+#   type: CNAME
+#   value: maple.mapletree.moe.
+# xo.maple:
+#   type: CNAME
+#   value: maple.mapletree.moe.
