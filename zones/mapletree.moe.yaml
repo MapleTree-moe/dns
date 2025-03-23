@@ -88,20 +88,12 @@ maple:
 #  type: AAAA
 #  value: 2001:19f0:0:4474:71fc:dba5:1606:c79c
 # yamllint enable rule:comments-indentation
-meddit:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: kanade.mapletree.moe.
-net:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: kanade.mapletree.moe.
+# meddit:
+#   type: CNAME
+#   value: kanade.mapletree.moe.
+# net:
+#   type: CNAME
+#   value: kanade.mapletree.moe.
 nzb.maple:
   type: CNAME
   value: maple.mapletree.moe.
@@ -111,13 +103,9 @@ prowlarr.maple:
 radarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-read:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+# read:
+#   type: CNAME
+#   value: maple.mapletree.moe.
 request:
   - octodns:
       cloudflare:
@@ -129,20 +117,12 @@ s872486._domainkey:
   # smtp2go requirement
   type: CNAME
   value: dkim.smtp2go.net.
-scale.maple:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
-search:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: mapletree.moe.
+# scale.maple:
+#   type: CNAME
+#   value: maple.mapletree.moe.
+# search:
+#   type: CNAME
+#   value: mapletree.moe.
 sonarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
