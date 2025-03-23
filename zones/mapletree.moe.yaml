@@ -39,9 +39,9 @@ badapple:
 bazarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-# bypass:
-#   type: CNAME
-#   value: kanade.mapletree.moe.
+bypass:
+  type: CNAME
+  value: kanade.mapletree.moe.
 cf2024-1._domainkey:
   # DO NOT MODIFY - cloudflare mx - refer to MX records for more information
   - octodns:
@@ -71,9 +71,9 @@ link:
 lldap.maple:
   type: CNAME
   value: maple.mapletree.moe.
-# manga:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+manga:
+  type: CNAME
+  value: maple.mapletree.moe.
 maple:
   # this is maple's primary record
   # FIXME: this should be a dynamic record
@@ -88,12 +88,12 @@ maple:
 #  type: AAAA
 #  value: 2001:19f0:0:4474:71fc:dba5:1606:c79c
 # yamllint enable rule:comments-indentation
-# meddit:
-#   type: CNAME
-#   value: kanade.mapletree.moe.
-# net:
-#   type: CNAME
-#   value: kanade.mapletree.moe.
+meddit:
+  type: CNAME
+  value: kanade.mapletree.moe.
+net:
+  type: CNAME
+  value: kanade.mapletree.moe.
 nzb.maple:
   type: CNAME
   value: maple.mapletree.moe.
@@ -103,12 +103,12 @@ prowlarr.maple:
 radarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-# read:
-#   type: CNAME
-#   value: maple.mapletree.moe.
-# request:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+read:
+  type: CNAME
+  value: maple.mapletree.moe.
+request:
+  type: CNAME
+  value: maple.mapletree.moe.
 s872486._domainkey:
   # smtp2go requirement
   type: CNAME
@@ -116,9 +116,9 @@ s872486._domainkey:
 # scale.maple:
 #   type: CNAME
 #   value: maple.mapletree.moe.
-# search:
-#   type: CNAME
-#   value: mapletree.moe.
+search:
+  type: CNAME
+  value: mapletree.moe.
 sonarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
