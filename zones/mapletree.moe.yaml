@@ -132,12 +132,12 @@ traefik.kanade:
 traefik.maple:
   type: CNAME
   value: maple.mapletree.moe.
-# watch:
-#   type: CNAME
-#   value: maple.mapletree.moe.
-# xen.maple:
-#   type: CNAME
-#   value: maple.mapletree.moe.
-# xo.maple:
-#   type: CNAME
-#   value: maple.mapletree.moe.
+watch:
+  type: CNAME
+  value: maple.mapletree.moe.
+xen.maple:
+  type: CNAME
+  value: maple.mapletree.moe.
+xo.maple:
+  type: CNAME
+  value: maple.mapletree.moe.
