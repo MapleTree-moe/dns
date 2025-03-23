@@ -31,25 +31,14 @@ _dmarc:
     # yamllint disable-line rule:line-length
     value: v=DMARC1\;  p=none\; rua=mailto:60c2ffa1264b43e68836c99fca7e14a3@dmarc-reports.cloudflare.net
 auth:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+  type: CNAME
+  value: maple.mapletree.moe.
 badapple:
   type: CNAME
   value: mapletree.moe.
 bazarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-bypass:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: kanade.mapletree.moe.
 cf2024-1._domainkey:
   # DO NOT MODIFY - cloudflare mx - refer to MX records for more information
   - octodns:
@@ -58,13 +47,9 @@ cf2024-1._domainkey:
     type: TXT
     # yamllint disable-line rule:line-length
     value: v=DKIM1\; h=sha256\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiweykoi+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+RPJB2ECPsEDTpeiI5ZyUAwJaVX7r6bznU67g7LvFq35yIo4sdlmtZGV+i0H4cpYH9+3JJ78k" "m4KXwaf9xUJCWF6nxeD+qG6Fyruw1Qlbds2r85U9dkNDVAS3gioCvELryh1TxKGiVTkg4wqHTyHfWsp7KD3WQHYJn0RyfJJu6YEmL77zonn7p2SRMvTMP3ZEXibnC9gz3nnhR6wcYL8Q7zXypKTMD58bTixDSJwIDAQAB
-cloud:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+# cloud:
+#     type: CNAME
+#     value: maple.mapletree.moe.
 em872486:
   # smtp2go requirement
   type: CNAME
@@ -73,13 +58,9 @@ kanade:
   # see root domain entry for why kanade is different than maple
   type: CNAME
   value: mapletree.moe.
-kubeapps.maple:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+# kubeapps.maple:
+#     type: CNAME
+#     value: maple.mapletree.moe.
 link:
   # smtp2go requirement
   type: CNAME
@@ -87,13 +68,9 @@ link:
 lldap.maple:
   type: CNAME
   value: maple.mapletree.moe.
-manga:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+# manga:
+#   type: CNAME
+#   value: maple.mapletree.moe.
 maple:
   # this is maple's primary record
   # FIXME: this should be a dynamic record
@@ -108,20 +85,6 @@ maple:
 #  type: AAAA
 #  value: 2001:19f0:0:4474:71fc:dba5:1606:c79c
 # yamllint enable rule:comments-indentation
-meddit:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: kanade.mapletree.moe.
-net:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: kanade.mapletree.moe.
 nzb.maple:
   type: CNAME
   value: maple.mapletree.moe.
@@ -131,13 +94,9 @@ prowlarr.maple:
 radarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
-read:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+# read:
+#   type: CNAME
+#   value: maple.mapletree.moe.
 request:
   - octodns:
       cloudflare:
@@ -149,20 +108,12 @@ s872486._domainkey:
   # smtp2go requirement
   type: CNAME
   value: dkim.smtp2go.net.
-scale.maple:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
-search:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: mapletree.moe.
+# scale.maple:
+#   type: CNAME
+#   value: maple.mapletree.moe.
+# search:
+#   type: CNAME
+#   value: mapletree.moe.
 sonarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
@@ -181,27 +132,12 @@ traefik.kanade:
 traefik.maple:
   type: CNAME
   value: maple.mapletree.moe.
-tube:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: mapletree.moe.
 watch:
   type: CNAME
   value: maple.mapletree.moe.
 xen.maple:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+  type: CNAME
+  value: maple.mapletree.moe.
 xo.maple:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
-    value: maple.mapletree.moe.
+  type: CNAME
+  value: maple.mapletree.moe.
