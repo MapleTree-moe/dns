@@ -104,8 +104,12 @@ meddit:
     type: CNAME
     value: kanade.mapletree.moe.
 net:
-  type: CNAME
-  value: kanade.mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: kanade.mapletree.moe.
 nzb.maple:
   type: CNAME
   value: maple.mapletree.moe.
@@ -116,8 +120,12 @@ radarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
 read:
-  type: CNAME
-  value: maple.mapletree.moe.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    type: CNAME
+    value: maple.mapletree.moe.
 request:
   type: CNAME
   value: maple.mapletree.moe.
