@@ -2,7 +2,6 @@
 ### mapletree.moe - DNS management
 ### mapletree.moe domain configuration file
 ###
----
 # this is the root domain
 "":
   - ttl: 300
@@ -120,8 +119,9 @@ tdarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
 tokisaki:
+  ttl: 300
   type: A
-  value: 1.1.1.1
+  value: 188.245.212.25
 torrent.maple:
   type: CNAME
   value: maple.mapletree.moe.
