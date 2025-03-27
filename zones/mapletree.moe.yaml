@@ -121,7 +121,7 @@ tdarr.maple:
 tokisaki:
   ttl: 300
   type: A
-  value: 188.245.212.25
+  value: 138.199.222.143
 torrent.maple:
   type: CNAME
   value: maple.mapletree.moe.
