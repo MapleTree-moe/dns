@@ -54,18 +54,8 @@ cf2024-1._domainkey:
 #     type: CNAME
 #     value: maple.mapletree.moe.
 docs:
-  - type: A
-    values:
-      - 185.199.108.153
-      - 185.199.109.153
-      - 185.199.110.153
-      - 185.199.111.153
-  - type: AAAA
-    values:
-      - 2606:50c0:8000::153
-      - 2606:50c0:8001::153
-      - 2606:50c0:8002::153
-      - 2606:50c0:8003::153
+  type: CNAME
+  value: mapletree-moe.github.io
 em872486:
   # smtp2go requirement
   type: CNAME
