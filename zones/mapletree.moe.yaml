@@ -55,7 +55,7 @@ cf2024-1._domainkey:
 #     value: maple.mapletree.moe.
 docs:
   type: CNAME
-  value: mapletree-moe.github.io
+  value: mapletree-moe.github.io.
 em872486:
   # smtp2go requirement
   type: CNAME
