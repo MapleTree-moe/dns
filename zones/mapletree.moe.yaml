@@ -2,6 +2,7 @@
 ### mapletree.moe - DNS management
 ### mapletree.moe domain configuration file
 ###
+---
 # this is the root domain
 "":
   - ttl: 300
@@ -29,6 +30,9 @@ _dmarc:
     type: TXT
     # yamllint disable-line rule:line-length
     value: v=DMARC1\;  p=none\; rua=mailto:60c2ffa1264b43e68836c99fca7e14a3@dmarc-reports.cloudflare.net
+_github-pages-challenge-MapleTree-moe:
+  type: TXT
+  value: e2f1ba55f33615bab9b1254440ac33
 auth:
   type: CNAME
   value: maple.mapletree.moe.
@@ -49,6 +53,19 @@ cf2024-1._domainkey:
 # cloud:
 #     type: CNAME
 #     value: maple.mapletree.moe.
+docs:
+  - type: A
+    values:
+      - 185.199.108.153
+      - 185.199.109.153
+      - 185.199.110.153
+      - 185.199.111.153
+  - type: AAAA
+    values:
+      - 2606:50c0:8000::153
+      - 2606:50c0:8001::153
+      - 2606:50c0:8002::153
+      - 2606:50c0:8003::153
 em872486:
   # smtp2go requirement
   type: CNAME
