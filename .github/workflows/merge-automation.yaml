@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.NAGATO_GITHUB_TOKEN }}
           base: main
