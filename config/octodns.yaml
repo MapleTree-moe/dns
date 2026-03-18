@@ -27,15 +27,6 @@ providers:
     class: octodns_spf.SpfSource
     ttl: 300
 
-  # for cloudflare mail routing
-  spf-cloudflare-mx-routing:
-    class: octodns_spf.SpfSource
-    includes:
-      - _spf.mx.cloudflare.net
-    merging_enabled: true
-    soft_fail: true
-    verify_dns_lookups: true
-
 zones:
   # mapletree primary domain
   mapletree.moe.:
