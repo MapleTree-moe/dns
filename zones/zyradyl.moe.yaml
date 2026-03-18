@@ -37,7 +37,7 @@
       - hosted-email-verify=zfk6utvo
       - v=spf1 include:spf.migadu.com -all
 
-_autoconfig._tcp:
+_autodiscover._tcp:
   - type: SRV
     value:
       port: 443
