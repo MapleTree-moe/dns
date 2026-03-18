@@ -8,142 +8,181 @@
   - ttl: 300
     type: A
     value: 188.245.212.25
-  # DO NOT MODIFY - cloudflare mx - these entries are for cloudflare's mx
-  # routing feature and are managed automatically. update the values to what is
-  # in the cloudflare web console if applying a plan ever fails
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-    type: MX
+  - type: MX
     values:
-      - exchange: route1.mx.cloudflare.net.
-        preference: 49
-      - exchange: route2.mx.cloudflare.net.
-        preference: 44
-      - exchange: route3.mx.cloudflare.net.
-        preference: 97
+      - exchange: aspmx1.migadu.com.
+        preference: 10
+      - exchange: aspmx2.migadu.com.
+        preference: 20
+  - type: TXT
+    values:
+      - hosted-email-verify=yimm6yw6
+      - v=spf1 include:spf.migadu.com -all
+
+_autodiscover._tcp:
+  - type: SRV
+    value:
+      port: 443
+      priority: 0
+      target: autodiscover.migadu.com.
+      weight: 1
+
 _dmarc:
-  # DO NOT MODIFY - cloudflare mx - refer to MX records for more information
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-    type: TXT
-    # yamllint disable-line rule:line-length
-    value: v=DMARC1\;  p=none\; rua=mailto:60c2ffa1264b43e68836c99fca7e14a3@dmarc-reports.cloudflare.net
+  - type: TXT
+    value: v=DMARC1\; p=quarantine\;
+
 _github-pages-challenge-MapleTree-moe:
   type: TXT
   value: e2f1ba55f33615bab9b1254440ac33
+
+_imaps._tcp:
+  - type: SRV
+    value:
+      port: 993
+      priority: 0
+      target: imap.migadu.com.
+      weight: 1
+
+_pop3s._tcp:
+  - type: SRV
+    value:
+      port: 995
+      priority: 0
+      target: pop.migadu.com.
+      weight: 1
+
+_submissions._tcp:
+  - type: SRV
+    value:
+      port: 465
+      priority: 0
+      target: smtp.migadu.com.
+      weight: 1
+
 auth:
   type: CNAME
   value: maple.mapletree.moe.
+
+autoconfig:
+  type: CNAME
+  value: autoconfig.migadu.com.
+
 badapple:
   type: CNAME
   value: mapletree.moe.
+
 # bazarr.maple:
 #   type: CNAME
 #   value: maple.mapletree.moe.
-cf2024-1._domainkey:
-  # DO NOT MODIFY - cloudflare mx - refer to MX records for more information
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-    type: TXT
-    # yamllint disable-line rule:line-length
-    value: v=DKIM1\; h=sha256\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiweykoi+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+RPJB2ECPsEDTpeiI5ZyUAwJaVX7r6bznU67g7LvFq35yIo4sdlmtZGV+i0H4cpYH9+3JJ78k" "m4KXwaf9xUJCWF6nxeD+qG6Fyruw1Qlbds2r85U9dkNDVAS3gioCvELryh1TxKGiVTkg4wqHTyHfWsp7KD3WQHYJn0RyfJJu6YEmL77zonn7p2SRMvTMP3ZEXibnC9gz3nnhR6wcYL8Q7zXypKTMD58bTixDSJwIDAQAB
+
 # cloud:
 #     type: CNAME
 #     value: maple.mapletree.moe.
+
 docs:
   type: CNAME
   value: mapletree-moe.github.io.
-em872486:
-  # smtp2go requirement
-  type: CNAME
-  value: return.smtp2go.net.
+
 kanade:
   # see root domain entry for why kanade is different than maple
   type: CNAME
   value: mapletree.moe.
+
+key1._domainkey:
+  type: CNAME
+  value: key1.mapletree.moe._domainkey.migadu.com.
+
+key2._domainkey:
+  type: CNAME
+  value: key2.mapletree.moe._domainkey.migadu.com.
+
+key3._domainkey:
+  type: CNAME
+  value: key3.mapletree.moe._domainkey.migadu.com.
+
 # kubeapps.maple:
 #     type: CNAME
 #     value: maple.mapletree.moe.
-link:
-  # smtp2go requirement
-  type: CNAME
-  value: track.smtp2go.net.
+
 lldap.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 # manga:
 #   type: CNAME
 #   value: maple.mapletree.moe.
+
 maple:
   # this is maple's primary record
   # FIXME: this should be a dynamic record
   type: A
   value: 178.63.50.123
-# yamllint disable rule:comments-indentation
-# FIXME: right now maple doesn't support ipv6
-# - octodns:
-#    cloudflare:
-#      auto-ttl: true
-#      proxied: false
-#  type: AAAA
-#  value: 2001:19f0:0:4474:71fc:dba5:1606:c79c
-# yamllint enable rule:comments-indentation
+
 nzb.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 prowlarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 radarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 # read:
 #   type: CNAME
 #   value: maple.mapletree.moe.
+
 request:
   type: CNAME
   value: maple.mapletree.moe.
-s872486._domainkey:
-  # smtp2go requirement
-  type: CNAME
-  value: dkim.smtp2go.net.
+
 # scale.maple:
 #   type: CNAME
 #   value: maple.mapletree.moe.
+
 # search:
 #   type: CNAME
 #   value: mapletree.moe.
+
 sonarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 status:
   type: CNAME
   value: mapletree.moe.
+
 tdarr.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 tokisaki:
   ttl: 300
   type: A
   value: 138.199.222.143
+
 torrent.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 traefik.kanade:
   type: CNAME
   value: mapletree.moe.
+
 traefik.maple:
   type: CNAME
   value: maple.mapletree.moe.
+
 # watch:
 #   type: CNAME
 #   value: maple.mapletree.moe.
+
 # xen.maple:
 #   type: CNAME
 #   value: maple.mapletree.moe.
+
 # xo.maple:
 #   type: CNAME
 #   value: maple.mapletree.moe.
