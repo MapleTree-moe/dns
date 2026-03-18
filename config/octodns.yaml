@@ -13,7 +13,7 @@ providers:
   # primary source for record data is yaml files in config directory
   config:
     class: octodns.provider.yaml.YamlProvider
-    default_ttl: 300
+    default_ttl: 3600
     directory: ./zones
 
   # still using cloudflare for the time being
