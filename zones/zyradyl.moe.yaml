@@ -4,7 +4,7 @@
 ###
 ---
 # this is the root domain
-'':
+"":
   # FIXME: this is a fucking disaster
   - octodns:
       cloudflare:
@@ -28,20 +28,26 @@
       - 2606:50c0:8003::153
   - type: MX
     values:
-      - exchange: mx01.mail.icloud.com.
+      - exchange: aspmx1.migadu.com.
         preference: 10
-      - exchange: mx02.mail.icloud.com.
-        preference: 10
+      - exchange: aspmx2.migadu.com.
+        preference: 20
   - type: TXT
     values:
-      - keybase-site-verification=VR5rL24ioeVMErfrEx4l0HdM9i-9BuSx_BAISYBGCzo
-      - apple-domain=rgljw9YPLB8BXHnf
-      - v=spf1 redirect=icloud.com
+      - hosted-email-verify=zfk6utvo
+      - v=spf1 include:spf.migadu.com -all
+
+_autoconfig._tcp:
+  - type: SRV
+    value:
+      port: 443
+      priority: 0
+      target: autodiscover.migadu.com.
+      weight: 1
 
 _dmarc:
   - type: TXT
-    # yamllint disable-line rule:line-length
-    value: v=DMARC1\;  p=none\; rua=mailto:53a74f296f7c40509893f7de1f13b93d@dmarc-reports.cloudflare.net
+    value: v=DMARC1; p=quarantine;
 
 _github-challenge-zyradyl-moe-org:
   - type: TXT
@@ -88,6 +94,30 @@ _gitlab-pages-verification-code.starstuck:
   - type: TXT
     value: gitlab-pages-verification-code=f77d8385652a60156d25f3956b1cc953
 
+_imaps._tcp:
+  - type: SRV
+    value:
+      port: 993
+      priority: 0
+      target: imap.migadu.com.
+      weight: 1
+
+_pop3s._tcp:
+  - type: SRV
+    value:
+      port: 995
+      priority: 0
+      target: pop.migadu.com.
+      weight: 1
+
+_submissions._tcp:
+  - type: SRV
+    value:
+      port: 465
+      priority: 0
+      target: smtp.migadu.com.
+      weight: 1
+
 about:
   - octodns:
       cloudflare:
@@ -103,6 +133,14 @@ archive:
         proxied: true
     type: CNAME
     value: zyradyl-moe.github.io.
+
+autoconfig:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: false
+    type: CNAME
+    value: autoconfig.migadu.com.
 
 ayanami:
   - octodns:
@@ -120,21 +158,29 @@ blog:
     type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
 
-kuroneko:
+key1._domainkey:
   - octodns:
       cloudflare:
         auto-ttl: true
-        proxied: true
+        proxied: false
     type: CNAME
-    value: s3.us-east-2.wasabisys.com.
+    value: key1.zyradyl.moe._domainkey.migadu.com.
 
-miyuki:
+key2._domainkey:
   - octodns:
       cloudflare:
         auto-ttl: true
-        proxied: true
+        proxied: false
     type: CNAME
-    value: s3.us-east-2.wasabisys.com.
+    value: key2.zyradyl.moe._domainkey.migadu.com.
+
+key3._domainkey:
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: false
+    type: CNAME
+    value: key3.zyradyl.moe._domainkey.migadu.com.
 
 neobabel:
   - octodns:
@@ -151,14 +197,6 @@ projects:
         proxied: true
     type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
-
-sig1._domainkey:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
-    value: sig1.dkim.zyradyl.moe.at.icloudmailadmin.com.
 
 starstuck:
   - octodns:

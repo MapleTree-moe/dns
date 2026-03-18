@@ -10,7 +10,7 @@ default_install_hook_types:
 repos:
   # nice to have features
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-added-large-files
       - id: check-yaml
@@ -21,7 +21,7 @@ repos:
 
   # enforce use of conventional commits messaging
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v4.0.0
+    rev: v4.4.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
@@ -29,7 +29,7 @@ repos:
 
   # lint yaml
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.29.0
+    rev: v1.38.0
     hooks:
       - id: yamllint
         args: [--strict]
