@@ -12,7 +12,7 @@ domains under the MapleTree Organization.
 ## Getting Started
 To make changes to the domain records, follow the steps below:
 
-  1. Make sure your environment has `python>=3.10` and `virtualenv` available.
+  1. Make sure your environment has `python>=3.14` and `virtualenv` available.
   As this differs from environment to environment, getting this part set up is
   left as an exercise for the user.
   2. Clone the repository: `git clone`
