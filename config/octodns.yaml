@@ -32,8 +32,6 @@ zones:
   mapletree.moe.:
     sources:
       - config
-      - spf-base
-      - spf-cloudflare-mx-routing
     targets:
       - cloudflare
 
