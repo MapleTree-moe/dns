@@ -6,21 +6,13 @@
 # this is the root domain
 "":
   # FIXME: this is a fucking disaster
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: A
+  - type: A
     values:
       - 185.199.108.153
       - 185.199.109.153
       - 185.199.110.153
       - 185.199.111.153
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: AAAA
+  - type: AAAA
     values:
       - 2606:50c0:8000::153
       - 2606:50c0:8001::153
@@ -65,35 +57,6 @@ _github-pages-challenge-zyradyl-moe.status:
   - type: TXT
     value: 3306ccf2cc1a305026e6ba2f038b09
 
-_gitlab-pages-verification-code:
-  - type: TXT
-    value: gitlab-pages-verification-code=696e35ee2ed51190f822df4b3f19c885
-
-_gitlab-pages-verification-code.archive:
-  - type: TXT
-    value: gitlab-pages-verification-code=936bfa7ddb28d23415f3c3cb03230060
-
-_gitlab-pages-verification-code.ayanami:
-  - type: TXT
-    # yamllint disable-line rule:line-length
-    value: _gitlab-pages-verification-code.ayanami.zyradyl.moe TXT gitlab-pages-verification-code=0d9b7c5278e2a424a15456b375434ccc
-
-_gitlab-pages-verification-code.blog:
-  - type: TXT
-    value: gitlab-pages-verification-code=5c3d7ab588c124ada46c23db3e946dd2
-
-_gitlab-pages-verification-code.neobabel:
-  - type: TXT
-    value: gitlab-pages-verification-code=1a96329c49ead67f73a7b19ee3cbab89
-
-_gitlab-pages-verification-code.projects:
-  - type: TXT
-    value: gitlab-pages-verification-code=43d52380ca5941b9bf78d4cded37ab6d
-
-_gitlab-pages-verification-code.starstuck:
-  - type: TXT
-    value: gitlab-pages-verification-code=f77d8385652a60156d25f3956b1cc953
-
 _imaps._tcp:
   - type: SRV
     value:
@@ -119,97 +82,49 @@ _submissions._tcp:
       weight: 1
 
 about:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: zyradyl-moe.github.io.
 
 archive:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: zyradyl-moe.github.io.
 
 autoconfig:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
+  - type: CNAME
     value: autoconfig.migadu.com.
 
 ayanami:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: zyradyl-moe.github.io.
 
 blog:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
 
 key1._domainkey:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
+  - type: CNAME
     value: key1.zyradyl.moe._domainkey.migadu.com.
 
 key2._domainkey:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
+  - type: CNAME
     value: key2.zyradyl.moe._domainkey.migadu.com.
 
 key3._domainkey:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: false
-    type: CNAME
+  - type: CNAME
     value: key3.zyradyl.moe._domainkey.migadu.com.
 
 neobabel:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: zyradyl-moe.github.io.
 
 projects:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: s3.ap-northeast-1.wasabisys.com.
 
 starstuck:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: zyradyl-moe.github.io.
 
 www:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-        proxied: true
-    type: CNAME
+  - type: CNAME
     value: zyradyl.moe.
