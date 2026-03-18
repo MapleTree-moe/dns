@@ -21,6 +21,11 @@ providers:
     class: octodns_cloudflare.CloudflareProvider
     token: env/CLOUDFLARE_TOKEN
 
+  # deSEC provider
+  desec:
+    class: octodns_desec.DesecProvider
+    token: env/DESEC_TOKEN
+
   # easy way to deploy best practice for domains without mail
   # apply to all by default
   spf-base:
@@ -41,3 +46,4 @@ zones:
       - config
     targets:
       - cloudflare
+      - desec
