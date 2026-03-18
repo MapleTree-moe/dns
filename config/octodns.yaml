@@ -45,5 +45,4 @@ zones:
     sources:
       - config
     targets:
-      - cloudflare
       - desec
