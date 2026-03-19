@@ -5,8 +5,7 @@
 ---
 # this is the root domain
 "":
-  - ttl: 300
-    type: A
+  - type: A
     value: 188.245.212.25
   - type: MX
     values:
@@ -159,7 +158,6 @@ tdarr.maple:
   value: maple.mapletree.moe.
 
 tokisaki:
-  ttl: 300
   type: A
   value: 138.199.222.143
 
