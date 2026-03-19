@@ -30,7 +30,7 @@ providers:
   # apply to all by default
   spf-base:
     class: octodns_spf.SpfSource
-    ttl: 300
+    ttl: 3600
 
 zones:
   # mapletree primary domain
@@ -38,7 +38,7 @@ zones:
     sources:
       - config
     targets:
-      - cloudflare
+      - desec
 
   # manage personal domain as well
   zyradyl.moe.:
